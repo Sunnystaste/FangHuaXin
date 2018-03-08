@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.squareup.okio:okio:1.13.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/commons-collections-3.0.jar')
+    implementation files('libs/json-lib-1.1-jdk13.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

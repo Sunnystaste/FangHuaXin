@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_label" />
+
+    <TextView
+        android:id="@+id/sort2"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView14"
+        android:text="XX关系" />
+
+    <TextView
+        android:textColor="@color/heise"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView14"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题"
+        android:id="@+id/question_content2" />
+
+    <ImageView
+
+        android:id="@+id/like2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/question_content2"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/X_people_like2"
+        android:src="@drawable/icon_like_default" />
+
+    <TextView
+        android:id="@+id/X_people_like2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/like2"
+        android:layout_alignEnd="@+id/question_content2"
+        android:layout_marginEnd="28dp"
+        android:text="X人有同感" />
+
+</RelativeLayout>

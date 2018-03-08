@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.youyou.myheart.Paint.CircleImagView
+        android:layout_margin="5dp"
+        android:src="@drawable/head_default"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/reply_icon" />
+
+    <TextView
+        android:textColor="@color/heise"
+        android:id="@+id/reply_tx"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/reply_icon"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/reply_icon"
+        android:text="匿名用户" />
+
+    <TextView
+        android:id="@+id/reply_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reply_icon"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/reply_icon"
+        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXX"
+        android:textColor="@color/heise" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reply_icon"
+        android:layout_below="@+id/reply_content"
+        android:text="time"
+        android:id="@+id/reply_time" />
+
+
+    <ImageView
+        android:id="@+id/reply_islike"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/imageView16"
+        android:layout_alignEnd="@+id/reply_content"
+        android:layout_marginEnd="37dp"
+        android:src="@drawable/icon_like_default" />
+
+    <TextView
+        android:id="@+id/reply_X_people_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView16"
+        android:layout_alignStart="@+id/reply_islike"
+        android:layout_marginStart="30dp"
+        android:text="X" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reply_time"
+        android:layout_marginTop="10dp"
+        android:src="@color/huise_tx"
+        android:id="@+id/imageView16" />
+</RelativeLayout>

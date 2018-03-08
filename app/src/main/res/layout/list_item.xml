@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_label" />
+
+    <TextView
+        android:id="@+id/sort"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView14"
+        android:text="XX关系" />
+
+    <TextView
+        android:textColor="@color/heise"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView14"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题问题"
+        android:id="@+id/question_content" />
+
+    <ImageView
+
+        android:id="@+id/like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/question_content"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/X_people_like"
+        android:src="@drawable/icon_like_default" />
+
+    <TextView
+        android:layout_marginRight="30dp"
+        android:id="@+id/X_people_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView17"
+        android:layout_alignParentEnd="true"
+        android:text="X人有同感" />
+
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/like"
+        android:background="@color/huise_tx"
+        android:id="@+id/imageView17" />
+
+
+    <com.example.youyou.myheart.Paint.CircleImagView
+        android:id="@+id/answer_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/imageView17"
+        android:layout_below="@+id/imageView17"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/user_logo" />
+
+    <TextView
+        android:textColor="@color/heise"
+        android:id="@+id/answer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/answer_icon"
+        android:layout_below="@+id/answer_icon"
+        android:text="回答者姓名" />
+
+
+    <TextView
+        android:textColor="@color/heise"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/answer_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/answer_name"
+        android:layout_toEndOf="@+id/answer_icon"/>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:id="@+id/yuyin"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/answer_name"
+        android:layout_toEndOf="@+id/answer_icon"
+        android:background="@drawable/record_button_bg_icon">
+
+        <ImageView
+
+            android:id="@+id/yuyin_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon_voice2" />
+
+        <TextView
+            android:id="@+id/yuyin_tx"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/yuyin_img"
+            android:text="2'54" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/X_people_listen"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/like"
+        android:layout_alignTop="@+id/yuyin"
+        android:gravity="center_vertical"
+        android:text="X人听过" />
+
+
+</RelativeLayout>

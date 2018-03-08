@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.youyou.myheart">
+    <!-- 添加必要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 自动聚焦权限 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/pic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.google.zxing.activity.CaptureActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".UserActivity.MyActivity">
+        </activity>
+        <activity android:name=".UserActivity.MyMessage">
+        </activity>
+        <activity android:name=".UserActivity.MyMessage_tongzhi">
+        </activity>
+        <activity android:name=".UserActivity.MyMessage_tixing">
+        </activity>
+        <activity android:name=".UserActivity.MyFeedBack">
+        </activity>
+        <activity android:name=".UserActivity.MyPoints">
+        </activity>
+        <activity android:name=".UserActivity.MyQandA">
+        </activity>
+        <activity android:name=".UserActivity.MyAccreditation">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".SearchActivity.SearchActivity">
+        </activity>
+        <activity android:name=".HomeActivity.ViewPagerActivity">
+        </activity>
+        <activity android:name=".HomeActivity.QuestionDetailsActivity">
+        </activity>
+        <activity android:name=".HomeActivity.QuestionActivity">
+        </activity>
+        <activity android:name=".HomeActivity.YuyueActivity">
+        </activity>
+        <activity android:name=".DiscoverActivity.ActivityDetail">
+        </activity>
+        <activity android:name=".DiscoverActivity.LiveActivity">
+        </activity>
+        <activity android:name=".DiscoverActivity.SortxqActivity">
+        </activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="Mob-AppKey" android:value="22fda68d18466"/>
+            <meta-data android:name="Mob-AppSecret" android:value="b7cf0b51f4126acfd9c89b8f598e5074"/>
+        </activity>
+
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106528517" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="Mob-AppKey" android:value="22fda68d18466"/>
+        <meta-data android:name="Mob-AppSecret" android:value="b7cf0b51f4126acfd9c89b8f598e5074"/>
+    </application>
+
+</manifest>

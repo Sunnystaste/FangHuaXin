@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/head_viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp">
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tiwen_l"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/btn_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="提问"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@drawable/vertical_line_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/qiandao_l"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/btn_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="活动签到"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/vertical_line_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:id="@+id/yuyue_l"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/btn_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="预约咨询"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/hor_line_icon"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/answered_question"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="已回答"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/zuixin_question"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="最新问题"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/cursor"
+                android:src="@mipmap/line"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:src="@color/huise"/>
+
+            <com.example.youyou.myheart.Paint.NoScrollListview
+                android:id="@+id/listview"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="7dp"
+                android:divider="@color/huise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.example.youyou.myheart.Paint.NoScrollListview>
+
+
+            <com.example.youyou.myheart.Paint.NoScrollListview
+                android:id="@+id/listview2"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="7dp"
+                android:divider="@color/huise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.example.youyou.myheart.Paint.NoScrollListview>
+
+            <RelativeLayout
+                android:id="@+id/load_more"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/tv"
+                    android:indeterminateDrawable="@drawable/progressbar" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/progress"
+                    android:layout_centerHorizontal="true"
+                    android:text="正在加载..."
+                    android:textColor="@color/heise" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/load_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="暂无更多已回答问题"
+                android:textColor="@color/heise" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

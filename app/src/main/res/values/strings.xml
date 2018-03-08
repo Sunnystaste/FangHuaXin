@@ -1,0 +1,26 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">仿话心</string>
+    <string name="shouye">首页</string>
+    <string name="discover">发现</string>
+    <string name="home">我的</string>
+    <string name="defalut">defalut</string>
+    <string name="classification">分类</string>
+    <string name="MyActivity">我的活动</string>
+    <string name="MyMessage">我的消息</string>
+    <string name="Message1">通知</string>
+    <string name="message2">提醒</string>
+    <string name="tzhi">通知</string>
+    <string name="txing">提醒</string>
+    <string name="My_QandA">我的问答</string>
+    <string name="empty">好像来到了不毛之地</string>
+    <string name="renzheng">学生认证</string>
+    <string name="feedback">意见反馈</string>
+    <string name="My_Point">我的积分</string>
+    <string name="encode_qrcode">生成二维码</string>
+    <string name="dencode_qrcode">扫描二维码</string>
+    <string name="code_text">请输入生成二维码的文本信息</string>
+    <string name="qrcodetext">这里显示扫描结果</string>
+
+</resources>

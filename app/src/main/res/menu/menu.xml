@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/option_normal_1"
+        android:icon="@drawable/ssdk_oks_classic_sinaweibo"
+        android:title="分享到微博" />
+
+    <item android:id="@+id/option_normal_2"
+        android:icon="@drawable/ssdk_oks_classic_qq"
+        android:title="分享到QQ" />
+
+</menu>
