@@ -1,5 +1,4 @@
 package com.example.youyou.myheart;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import com.google.gson.Gson;
  * 延时两秒之后跳转至主Activity
  **/
 public class SplashActivity extends Activity {
-    private Gson gson = new Gson();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

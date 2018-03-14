@@ -63,7 +63,8 @@ import static com.example.youyou.myheart.Tool.OkHttp3Util.doGet;
 /**
  * Created by youyou on 2017/12/10.
  */
-public class HomeFragment extends Fragment implements CallBack,LoginCallBack,View.OnClickListener,AdapterView.OnItemClickListener{
+public class HomeFragment extends Fragment implements
+        CallBack,LoginCallBack,View.OnClickListener,AdapterView.OnItemClickListener{
     private ProgressDialog mProgressDialog;
     //打开扫描界面请求码
     private int in =1;
